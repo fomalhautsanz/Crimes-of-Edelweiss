@@ -1,7 +1,42 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<h1>🕵️ The Missing Student</h1>
 
-<h1>Hello, world!</h1>
+<p>
+    A student has mysteriously disappeared from the computer laboratory.
+</p>
 
-Welcome to your new app.
+<h3>What do you want to investigate?</h3>
+
+<button @onclick="ExamineComputer">
+    💻 Examine the Computer
+</button>
+
+<button @onclick="SearchRoom">
+    🔍 Search the Room
+</button>
+
+<button @onclick="QuestionWitness">
+    👤 Question the Witness
+</button>
+
+<p>@message</p>
+
+@code {
+    private string message = "";
+
+    private void ExamineComputer()
+    {
+        message = "You found a suspicious message on the computer...";
+    }
+
+    private void SearchRoom()
+    {
+        message = "You found a torn piece of paper under the desk.";
+    }
+
+    private void QuestionWitness()
+    {
+        message = "The witness says they saw someone enter at 8:43 PM.";
+    }
+}
