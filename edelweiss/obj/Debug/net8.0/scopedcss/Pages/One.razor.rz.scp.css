@@ -1,0 +1,29 @@
+.content-panel[b-y2g7vk44hd] {
+    background-color: rgba(20, 12, 8, 0.75);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 3rem auto;
+    color: #e8dcc8;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.action-buttons[b-y2g7vk44hd] {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-message[b-y2g7vk44hd] {
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+button[b-y2g7vk44hd] {
+    background-color: #995F2F;
+    color: #e8dcc8;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
