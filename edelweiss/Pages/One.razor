@@ -1,0 +1,152 @@
+﻿@page "/"
+@using edelweiss.Data
+@inject GameState State
+
+<link href="One.razor.css" rel="stylesheet" />
+
+<div class="content-panel">
+<h1>Chapter 1: The Disappearance of Edel Winburg</h1>
+
+<p class="story-text">
+    Studying at the University of Edelweiss was a dream come true for many students, but for some, it was a nightmare waiting to happen.
+</p>
+
+<p class="story-text">
+    Edel Winburg, the only son of the university principal, was announced missing after he failed to return to his dormitory following a late-night study session in the computer laboratory.
+</p>
+
+<p class="story-text">
+    Two days days later have passed, and there were still no signs of Edel. His father, Principal Winburg, was beside himself with worry. He had already contacted the campus security and local authorities, but there were no leads on Edel's whereabouts.
+</p>
+
+<h3>Where will you begin your investigation?</h3>
+
+<div class="action-buttons">
+<button @onclick="ExamineComputer">
+    💻 Examine the Computer
+</button>
+
+<button @onclick="SearchRoom">
+    🔍 Search the Room
+</button>
+
+<button @onclick="QuestionWitness">
+    👤 Question the Witness
+</button>
+</div>
+
+<p class="story-message">@message</p>
+
+@if (State.CollectedEvidence.Count > 0)
+{
+    <h4>Evidence Collected:</h4>
+    <ul>
+        @foreach (var evidence in State.CollectedEvidence)
+        {
+            <li>@evidence.Icon @evidence.Name - @evidence.Description</li>
+        }
+    </ul>
+}
+
+</div>
+
+@code {
+    private string message = "";
+
+   private void ExamineComputer()
+{
+    var evidence = new Evidence
+    {
+        Id = "computer_message",
+        Name = "Suspicious Message",
+        Description = "A strange message found on Edel Winburg's computer.",
+        Icon = "💻"
+    };
+
+    State.AddEvidence(evidence);
+
+    message = @"The moment you stepped inside the computer laboratory, something felt wrong.
+
+        The room looked almost untouched. Chairs were neatly arranged, computers were switched off, and not a single piece of paper seemed out of place.
+
+        Almost.
+
+        Near the back of the room, you noticed one computer with its chair pulled away from the desk.
+
+        Someone had been sitting here.
+
+        You approached the unit and pressed the mouse.
+
+        The monitor flickered to life.
+
+        A message was still open on the screen.
+
+        It had been left behind deliberately—or at least, that was what you wanted to believe.";
+    }
+
+    private void SearchRoom()
+{
+    var evidence = new Evidence
+    {
+        Id = "torn_paper",
+        Name = "Torn Piece of Paper",
+        Description = "A torn piece of paper discovered beneath Edel Winburg's desk.",
+        Icon = "📝"
+    };
+
+    State.AddEvidence(evidence);
+
+    message = @"The classroom was the first place you searched after entering the building.
+
+        Unlike the computer laboratory, there were no obvious signs of a struggle. The desks were arranged neatly, and the room had been left exactly as it was after the last class.
+
+        You began checking the desks one by one.
+
+        Near the back of the classroom, you noticed a name written on one of them:
+
+        ""EdWin.""
+
+        You crouched down and looked underneath.
+
+        Something was caught between the legs of the desk.
+
+        A torn piece of paper.
+
+        You carefully pulled it free. Most of the page was missing, but a few handwritten words remained.
+
+        Whatever this was, someone had tried to tear it apart.
+
+        The question was: why?";
+        }
+
+    private void QuestionWitness()
+{
+    var evidence = new Evidence
+    {
+        Id = "witness_statement",
+        Name = "Witness Statement",
+        Description = "A statement from the campus security guard.",
+        Icon = "👁️"
+    };
+
+    State.AddEvidence(evidence);
+
+    message = @"Mr. Briggs had been working the night shift that evening.
+
+    According to his statement, the campus was unusually quiet. Only a few buildings still had students inside because of the scheduled night classes.
+
+    At approximately 8:30 PM, he noticed someone entering the computer laboratory.
+
+    It was a student.
+
+    Alone.
+
+    Mr. Briggs couldn't remember the student's name, but he distinctly remembered one detail.
+
+    The student was carrying a black backpack.
+
+    He also remembered something else.
+
+    The student never came back out.";
+}
+}
