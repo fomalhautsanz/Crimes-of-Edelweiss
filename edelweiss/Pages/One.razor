@@ -1,6 +1,9 @@
 ﻿@page "/"
 
-<h1>🕵️ The Missing Student</h1>
+<link href="One.razor.css" rel="stylesheet" />
+
+<div class="content-panel">
+<h1>Chapter 1: The Disappearance of Edel Winburg</h1>
 
 <p>
     A student has mysteriously disappeared from the computer laboratory.
@@ -21,6 +24,8 @@
 </button>
 
 <p>@message</p>
+
+</div>
 
 @code {
     private string message = "";

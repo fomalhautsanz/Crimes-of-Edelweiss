@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "D:\\Web Dev\\Edelweiss Crimes\\edelweiss\\wwwroot\\images\\university-bg.png",
+      "PackagePath": "staticwebassets\\images\\university-bg.png"
+    },
+    {
       "Id": "D:\\Web Dev\\Edelweiss Crimes\\edelweiss\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

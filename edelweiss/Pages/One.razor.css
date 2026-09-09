@@ -1,0 +1,9 @@
+.content-panel {
+    background-color: rgba(20, 12, 8, 0.75);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 3rem auto;
+    color: #e8dcc8;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}

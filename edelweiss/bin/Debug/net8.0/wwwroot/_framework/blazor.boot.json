@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "edelweiss",
   "resources": {
-    "hash": "sha256-AsVanKTtmvp2hN9FkC1a1XNyCqAydVG+huKIdLFSMxQ=",
+    "hash": "sha256-WhArcEmGJmN3PDtmMaSYcdmyFltp0CO7uAlAv6QhTtw=",
     "jsModuleNative": {
       "dotnet.native.8.0.30.h3pypvlx2v.js": "sha256-dexsp+9ih2C28zVhNnPXUbkz2QCq7lHpkyDcmaLl7NQ="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-pP80UGziulDYhvVdeUaGEq9FlrHQDQmnCqVvx1FJZis=",
       "netstandard.wasm": "sha256-ARMsMyhWuSDjvzisfZbnEptnxh8Vh7VpHPhuT6iazy0=",
       "System.Private.CoreLib.wasm": "sha256-+28m4yuZsdz9ij1sJHvNH896fSI8gXgrQ9bhGO76Qqo=",
-      "edelweiss.wasm": "sha256-7heo65HlBo8jW2E2OTdC50JwqeFRnak8IRXA6qqymj0="
+      "edelweiss.wasm": "sha256-NAfw+1yh3hsil6grUlDUqmsSakZhRVgvUoGOU+UoZyQ="
     },
     "pdb": {
-      "edelweiss.pdb": "sha256-+W0/UkVFeL/JDtM97M+LSbJVyZui2cf/HymIxo+Rjbs="
+      "edelweiss.pdb": "sha256-O1ERYkoVHmOP9XtylpWlHQzFTnRYbn60mOOFiBQYUzQ="
     }
   },
   "cacheBootResources": true,

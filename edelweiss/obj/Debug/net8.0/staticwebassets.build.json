@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RF0Vf1qjCxxQcLnXcmZ+9/7UD+CdlftFOk4Zla04k+s=",
+  "Hash": "cHp8LdktPNUKqIA/o4/qviL7j8jyiUByrCvseC7yito=",
   "Source": "edelweiss",
   "BasePath": "/",
   "Mode": "Root",
@@ -7900,6 +7900,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "D:\\Web Dev\\Edelweiss Crimes\\edelweiss\\wwwroot\\images\\university-bg.png",
+      "SourceId": "edelweiss",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web Dev\\Edelweiss Crimes\\edelweiss\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/university-bg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\university-bg.png"
     },
     {
       "Identity": "D:\\Web Dev\\Edelweiss Crimes\\edelweiss\\wwwroot\\index.html",

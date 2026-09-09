@@ -819,6 +819,7 @@ D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\staticwebassets\msbuild.b
 D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
 D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
+D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\scopedcss\Pages\One.razor.rz.scp.css
 D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\scopedcss\bundle\edelweiss.styles.css
 D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\scopedcss\projectbundle\edelweiss.bundle.scp.css
 D:\Web Dev\Edelweiss Crimes\edelweiss\obj\Debug\net8.0\compressed\c85goc7ek2.gz
