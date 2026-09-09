@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("edelweiss")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39eb0f067e833c8769b263b434aabd7275051f74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb02245a6889cdb2ff03a76c4339f0764f6ea88f")]
 [assembly: System.Reflection.AssemblyProductAttribute("edelweiss")]
 [assembly: System.Reflection.AssemblyTitleAttribute("edelweiss")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
