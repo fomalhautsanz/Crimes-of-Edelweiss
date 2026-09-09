@@ -1,6 +1,6 @@
 # Crimes of Edelweiss
 
-A narrative detective mystery game built with **C# and Blazor WebAssembly**. Set at the University of Edelweiss, each chapter presents a brand new crime for you to investigate — explore the scene, examine evidence, and question witnesses to solve the case.
+A narrative detective mystery game built with **C# and Blazor WebAssembly**. Set at the City of Edelweiss, each chapter presents a brand new crime for you to investigate — explore the scene, examine evidence, and question witnesses to solve the case.
 
 ## About
 
