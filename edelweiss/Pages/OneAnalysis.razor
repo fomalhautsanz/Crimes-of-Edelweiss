@@ -1,0 +1,34 @@
+@page "/OneAnalysis"
+@using edelweiss.Data
+@inject GameState State
+@inject NavigationManager Nav
+
+<div class="content-panel">
+<h2>Piecing It Together</h2>
+
+<ul>
+    @foreach (var evidence in State.CollectedEvidence)
+    {
+        <li>@evidence.Icon <strong>@evidence.Name</strong> — @evidence.Description</li>
+    }
+</ul>
+
+<h3>Who do you believe is responsible?</h3>
+
+<div class="suspect-list">
+    @foreach (var suspect in State.Chapter1Suspects)
+    {
+        <button @onclick="() => Accuse(suspect.Id)">
+            @suspect.Name — <em>@suspect.Description</em>
+        </button>
+    }
+</div>
+</div>
+
+@code {
+    private void Accuse(string suspectId)
+    {
+        State.AccusedSuspectId = suspectId;
+        Nav.NavigateTo("/OneResolution");
+    }
+}

@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using edelweiss.Data
 @inject GameState State
+@inject NavigationManager Nav
 
 <link href="One.razor.css" rel="stylesheet" />
 
@@ -46,6 +47,14 @@
             <li>@evidence.Icon @evidence.Name - @evidence.Description</li>
         }
     </ul>
+}
+
+@if (State.AllEvidenceCollected)
+{
+    <div class="proceed-panel">
+        <p><em>You've gathered enough to form a theory...</em></p>
+        <button @onclick="GoToAnalysis">📋 Review the Evidence</button>
+    </div>
 }
 
 </div>
@@ -148,5 +157,14 @@
     He also remembered something else.
 
     The student never came back out.";
+}
+}
+
+@code {
+
+
+private void GoToAnalysis()
+{
+    Nav.NavigateTo("/OneAnalysis");
 }
 }

@@ -101,3 +101,147 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+.content-panel {
+    background-color: rgba(20, 12, 8, 0.75);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 3rem auto;
+    color: #e8dcc8;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+button {
+    background-color: #995F2F;
+    color: #e8dcc8;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Custom styles for the OneAnalysiz page */
+
+h2 {
+    border-bottom: 1px solid rgba(232, 220, 200, 0.25);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+/* Evidence list styled like case file entries */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-left: 3px solid #995F2F;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: #e8dcc8;
+}
+
+/* Suspect cards instead of plain inline buttons */
+.suspect-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.suspect-list button {
+    text-align: left;
+    padding: 1rem;
+    background-color: rgba(153, 95, 47, 0.25);
+    border: 1px solid rgba(153, 95, 47, 0.6);
+    border-radius: 6px;
+    color: #e8dcc8;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.suspect-list button:hover {
+    background-color: rgba(153, 95, 47, 0.55);
+    border-color: #c07d3f;
+    transform: translateX(2px);
+}
+
+.suspect-list button em {
+    display: block;
+    margin-top: 0.35rem;
+    font-style: italic;
+    opacity: 0.85;
+    font-weight: normal;
+}
+
+
+
+.action-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-message {
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+
+
+/* Custom styles for the OneResolution page */
+h2 {
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Success state — warm gold accent, case-closed feel */
+.resolution-success {
+    border: 1px solid rgba(200, 160, 90, 0.4);
+    box-shadow: 0 4px 25px rgba(200, 160, 90, 0.15), 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.resolution-success h2 {
+    color: #d4af6a;
+}
+
+.hook-text {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed rgba(232, 220, 200, 0.25);
+    opacity: 0.85;
+}
+
+/* Fail state — cold, desaturated, a little unsettling */
+.resolution-fail {
+    border: 1px solid rgba(150, 60, 60, 0.35);
+    box-shadow: 0 4px 25px rgba(90, 20, 20, 0.2), 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.resolution-fail h2 {
+    color: #b56a6a;
+}
+
+.resolution-fail button {
+    margin-top: 1rem;
+    background-color: #6b3030;
+}
+
+.resolution-fail button:hover {
+    background-color: #8a3d3d;
+}

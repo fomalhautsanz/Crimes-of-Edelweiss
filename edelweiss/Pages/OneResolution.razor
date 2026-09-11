@@ -1,0 +1,34 @@
+@page "/OneResolution"
+@using System.Linq
+@using edelweiss.Data
+@inject GameState State
+@inject NavigationManager Nav
+
+<div class="content-panel @(correct ? "resolution-success" : "resolution-fail")">
+@{
+    var accused = State.Chapter1Suspects.FirstOrDefault(s => s.Id == State.AccusedSuspectId);
+}
+
+@if (correct)
+{
+    <h2>Case Closed</h2>
+    <p>Your instincts didn't fail you. @accused!.Name had been hiding the truth all along.</p>
+    <p class="hook-text"><em>Chapter 1 complete. Chapter 2 begins...</em></p>
+}
+else
+{
+    <h2>A Cold Case</h2>
+    <p>@accused?.Name was innocent. Without enough proof, the real culprit slipped away — and Edel Winburg's case goes cold.</p>
+    <button @onclick="Restart">🔄 Try Again</button>
+}
+</div>
+
+@code {
+    private bool correct => State.Chapter1Suspects.FirstOrDefault(s => s.Id == State.AccusedSuspectId)?.IsCulprit == true;
+
+    private void Restart()
+    {
+        State.ResetChapter1();
+        Nav.NavigateTo("/");
+    }
+}
